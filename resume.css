@@ -25,7 +25,6 @@ i {
 .layout {
   padding: 1.5rem;
   display: flex;
-  overflow: auto;
 }
 
 .layout div:first-child {
@@ -215,4 +214,36 @@ hr {
 
 .social-icon a:not(:last-child) {
   padding-right: 0.5rem;
+}
+
+
+@media only screen and (max-width : 768px) {
+  .layout {
+    display: block;
+    padding: 1rem;
+  }
+
+  .layout div {
+    width: 100%;
+  }
+
+  .layout > div:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .icon-title > div {
+    font-size: 1.5rem;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+
+  .website-link {
+    font-size: 0.75rem;
+  }
+
+  .project-desc {
+    font-size: 0.875rem;
+  }
 }
